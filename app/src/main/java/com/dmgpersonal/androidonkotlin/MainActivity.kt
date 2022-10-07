@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     fun forCycle() {
         val res = ArrayList<Int>()
         for (i in 1..9) {
@@ -40,12 +41,14 @@ class MainActivity : AppCompatActivity() {
             .text = res.toString()
     }
 
+
     fun repeatCycle() {
         val res = ArrayList<Int>()
         repeat(9) { index -> res.add(index) } // it переименовываем в index для наглядности
         findViewById<AppCompatTextView>(R.id.repeatCycleTextView)
             .text = res.toString()
     }
+
 
     fun forEachCycle() {
         val mass = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
@@ -55,6 +58,7 @@ class MainActivity : AppCompatActivity() {
         mass.forEach { st.append(it) }
         forEachCycleTextView.text = mass.toString()
     }
+
 
     fun showCopyDataClass() {
         copyDataClass = dataClass.copy(firstFieldIdx = 2)

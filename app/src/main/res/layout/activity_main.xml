@@ -153,6 +153,7 @@
         app:layout_constraintStart_toEndOf="@id/showDataClassFieldButton"
         app:layout_constraintTop_toBottomOf="@+id/forCycleTextView" />
 
+
     <View
         android:id="@+id/hLine3"
         android:layout_width="match_parent"
@@ -173,6 +174,7 @@
         android:layout_marginStart="8dp"
         android:text="@string/foreach" />
 
+    
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/repeatButton"
         android:layout_width="wrap_content"
